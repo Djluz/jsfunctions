@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>Document</title>
+
+        <style>
+            .toolbar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2px 50px;
+                background-color:rgb(206, 244, 246);
+            }
+            .brand{
+                margin-left: 20px;
+            }
+            .cartupdate a{
+                font-size: 20px;
+                font-weight: bold;
+                text-decoration: none;
+                color:black
+            }
+
+            .products {
+                display: flex;
+                justify-content: center;
+                
+            }
+            .product {
+                text-align: center;
+                border-radius: 25px;
+                box-shadow: 0 5px 10px #8b8989;
+                transition: all 400ms ease-in-out;
+                margin: 10px;
+                padding: 10px;
+                background-color: aliceblue;
+            }
+            .product:hover{
+                box-shadow: 0px 10px 20px #645e61;
+            }
+            img{
+                border-radius: 25px;
+                width: 100%;
+                height: auto;
+            }
+            .added {
+                color: white;
+                background-color: red;
+            }
+            .addtocart{
+                font-size: 15px;
+                width: 30%;
+                border-radius: 20px;
+                background-color: aqua;
+                border: 1px solid black; 
+                margin-bottom: 20px;
+            }
+            .addtocart:hover{
+                background-color: whitesmoke;
+                box-shadow: 0px 5px 10px #1edbe4;
+                border: 2px solid aqua;  
+            }
+            .cart{
+                margin-top: 10px;
+                border-radius: 20px;
+                background-color: aqua;
+                border: 1px solid black;
+            }
+            .cart:hover{
+                background-color: whitesmoke;
+                box-shadow: 0px 5px 10px #1edbe4;
+                border: 2px solid aqua;  
+            }
+            #like{
+                font-size:30px;
+                margin-right: 50px;
+            }
+            #like:hover{
+                color: aqua;
+            }
+        </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="toolbar">
+            <h1 class="brand">Shop</h1>
+            <p class="cartupdate">
+               
+                    Cart items:
+                    <span id="count">0</span><br> 
+                    Price:
+                    <span id="sum">0</span>
+                <br>
+                
+                <a href="cart.html">
+                    <button class= "cart" > Checkout</button>
+                </a>
+            </p>
+        </div>
+
+        <div class="products">
+            <div class="product ">
+                <img src ="1.png">
+                <h3>Black high heels shoes</h3>
+                <p>Price: 2000</p><br>
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="like"></i>
+                <button class="addtocart" data-id="1" data-image="1.png" data-price="2000" data-title="Black high heels shoes">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src ="2.png">
+                <h3>Elegant black dress</h3>
+                <p>Price: 3000</p><br>
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="like"></i>
+                <button class="addtocart" data-id="2" data-image="2.png" data-price="3000" data-title="Elegant black dress">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src ="4.png">
+                <h3>Big diamond ring</h3>
+                <p>Price: 6000</p><br>
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="like"></i>
+                <button class="addtocart" data-id="3" data-image="4.png" data-price="6000" data-title="Big diamond ring">Add to cart</button>
+            </div>
+
+            <div class="product">
+                <img src ="3.png">
+                <h3>Baby girl outfit</h3>
+                <p>Price: 1000</p><br>
+                <i onclick="myFunction(this)" class="fa fa-thumbs-up" id="like"></i>
+                <button class="addtocart" data-id="4" data-image="3.png" data-price="1000" data-title="Baby girl outfit">Add to cart</button>
+            </div>
+        </div>
+    </div>
+
+        <script src="shop.js"></script>
+
+    </body>
+</html>

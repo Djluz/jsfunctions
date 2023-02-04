@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+body {
+    padding: 150px;
+    padding-bottom: 300px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(to top right, #0000ff 30%, #0099ff 80%);
+}
+h1{
+    text-align: center;
+}
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+.row {margin: 0 -5px;}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 768px) {
+    body {
+    padding: 100px;
+    }
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+    body {
+    padding: 10px;
+    }
+    }
+.card {
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+  border-radius: 30px;
+}
+button{
+    border: 1px blue;
+    border-radius: 50px;
+    background-color: #0000ff;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+button:hover{
+    border: 1px rgb(9, 9, 9);
+    background-color: white;
+    color: blue;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+<h1>JavaScript Functions</h1>
+<br><br>
+<br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Example No.1</h3>
+      <p id="text1">i will make this to uppercase</p>
+      <br>
+      <button type="button" id="btn1">Click me!</button>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <h3>Example No.2</h3>
+      <p id="text2">I WILL MAKE THIS TO LOWERCASE</p>
+      <br>
+      <button type="button" id="btn2">Click me!</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>Example No.3</h3>
+      <p id="text3">I have a surprise for you!</p>
+      <br>
+      <button type="button" id="btn3">Click me!</button>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card" id="myDIV">
+      <h3>Example No.4</h3>
+      <p id="text4">Change my color!</p>
+      <br>
+      <button type="button" id="btn4">Click me!</button>
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="row">
+    <div class="column">
+        <div class="card">
+            <h3>Example No.5</h3>
+            <p>Click the button to see my to do list.</p>
+            <br>
+            <a href="todolist.html">
+                <button type="button" id="btn4"> To Do List</button>
+            </a> 
+        </div>
+    </div>
+  
+    <div class="column">
+        <div class="card">
+            <h3>Example No.6</h3>
+            <p>Click the button to see my cart.</p>
+            <br>
+            <a href="cart.html">
+                <button type="button" id="btn4">My Cart</button>
+            </a> 
+        </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>Example No.7</h3>
+        <p id="text7">Do you want some magic?</p>
+        <br>
+        <button type="button" onclick="myFunction1()">Click me!</button>
+      </div>
+    </div>
+    
+    <div class="column">
+      <div class="card">
+        <h3>Example No.8</h3>
+        <p id="text8">I have good news!!!</p>
+        <br>
+        <button type="button" onclick="myFunction2()">Click me!</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+
+</body>
+</html>
